@@ -1,0 +1,2290 @@
+{
+  "nodes": [
+    {
+      "op": "null", 
+      "name": "data", 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv82_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv82_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv82_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "16", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[0, 0, 0], [1, 0, 0], [2, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm48_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm48_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm48_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm48_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm48_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[3, 0, 0], [4, 0, 0], [5, 0, 0], [6, 0, 1], [7, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu48_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[8, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv83_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv83_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv83_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "16", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[9, 0, 0], [10, 0, 0], [11, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm49_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm49_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm49_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm49_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm49_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[12, 0, 0], [13, 0, 0], [14, 0, 0], [15, 0, 1], [16, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu49_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[17, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "pool27_fwd", 
+      "attrs": {
+        "global_pool": "False", 
+        "kernel": "(2, 2)", 
+        "layout": "NCHW", 
+        "pad": "(0, 0)", 
+        "pool_type": "max", 
+        "pooling_convention": "valid", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[18, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv84_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv84_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv84_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "32", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[19, 0, 0], [20, 0, 0], [21, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm50_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm50_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm50_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm50_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm50_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[22, 0, 0], [23, 0, 0], [24, 0, 0], [25, 0, 1], [26, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu50_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[27, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv85_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv85_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv85_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "32", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[28, 0, 0], [29, 0, 0], [30, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm51_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm51_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm51_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm51_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(32,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm51_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[31, 0, 0], [32, 0, 0], [33, 0, 0], [34, 0, 1], [35, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu51_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[36, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "pool28_fwd", 
+      "attrs": {
+        "global_pool": "False", 
+        "kernel": "(2, 2)", 
+        "layout": "NCHW", 
+        "pad": "(0, 0)", 
+        "pool_type": "max", 
+        "pooling_convention": "valid", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[37, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv86_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv86_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv86_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "64", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[38, 0, 0], [39, 0, 0], [40, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm52_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm52_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm52_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm52_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm52_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[41, 0, 0], [42, 0, 0], [43, 0, 0], [44, 0, 1], [45, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu52_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[46, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv87_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv87_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv87_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "64", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[47, 0, 0], [48, 0, 0], [49, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm53_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm53_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm53_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm53_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(64,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm53_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[50, 0, 0], [51, 0, 0], [52, 0, 0], [53, 0, 1], [54, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu53_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[55, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "pool29_fwd", 
+      "attrs": {
+        "global_pool": "False", 
+        "kernel": "(2, 2)", 
+        "layout": "NCHW", 
+        "pad": "(0, 0)", 
+        "pool_type": "max", 
+        "pooling_convention": "valid", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[56, 0, 0]]
+    }, 
+    {
+      "op": "_contrib_MultiBoxPrior", 
+      "name": "tinyssd3_multiboxprior0", 
+      "attrs": {
+        "ratios": "[1, 2, 0.5]", 
+        "sizes": "[0.2, 0.272]"
+      }, 
+      "inputs": [[57, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv90_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv90_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv90_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[57, 0, 0], [59, 0, 0], [60, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm54_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm54_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm54_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm54_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm54_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[61, 0, 0], [62, 0, 0], [63, 0, 0], [64, 0, 1], [65, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu54_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[66, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv91_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv91_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv91_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[67, 0, 0], [68, 0, 0], [69, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm55_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm55_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm55_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm55_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm55_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[70, 0, 0], [71, 0, 0], [72, 0, 0], [73, 0, 1], [74, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu55_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[75, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "pool30_fwd", 
+      "attrs": {
+        "global_pool": "False", 
+        "kernel": "(2, 2)", 
+        "layout": "NCHW", 
+        "pad": "(0, 0)", 
+        "pool_type": "max", 
+        "pooling_convention": "valid", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[76, 0, 0]]
+    }, 
+    {
+      "op": "_contrib_MultiBoxPrior", 
+      "name": "tinyssd3_multiboxprior1", 
+      "attrs": {
+        "ratios": "[1, 2, 0.5]", 
+        "sizes": "[0.37, 0.447]"
+      }, 
+      "inputs": [[77, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv94_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv94_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv94_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[77, 0, 0], [79, 0, 0], [80, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm56_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm56_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm56_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm56_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm56_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[81, 0, 0], [82, 0, 0], [83, 0, 0], [84, 0, 1], [85, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu56_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[86, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv95_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv95_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv95_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[87, 0, 0], [88, 0, 0], [89, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm57_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm57_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm57_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm57_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm57_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[90, 0, 0], [91, 0, 0], [92, 0, 0], [93, 0, 1], [94, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu57_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[95, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "pool31_fwd", 
+      "attrs": {
+        "global_pool": "False", 
+        "kernel": "(2, 2)", 
+        "layout": "NCHW", 
+        "pad": "(0, 0)", 
+        "pool_type": "max", 
+        "pooling_convention": "valid", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[96, 0, 0]]
+    }, 
+    {
+      "op": "_contrib_MultiBoxPrior", 
+      "name": "tinyssd3_multiboxprior2", 
+      "attrs": {
+        "ratios": "[1, 2, 0.5]", 
+        "sizes": "[0.54, 0.619]"
+      }, 
+      "inputs": [[97, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv98_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv98_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv98_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[97, 0, 0], [99, 0, 0], [100, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm58_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm58_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm58_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm58_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm58_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[101, 0, 0], [102, 0, 0], [103, 0, 0], [104, 0, 1], [105, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu58_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[106, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv99_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv99_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv99_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "128", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[107, 0, 0], [108, 0, 0], [109, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm59_gamma", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm59_beta", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm59_running_mean", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "batchnorm59_running_var", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "ones", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(128,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "BatchNorm", 
+      "name": "batchnorm59_fwd", 
+      "attrs": {
+        "axis": "1", 
+        "eps": "1e-05", 
+        "fix_gamma": "False", 
+        "momentum": "0.9", 
+        "use_global_stats": "False"
+      }, 
+      "inputs": [[110, 0, 0], [111, 0, 0], [112, 0, 0], [113, 0, 1], [114, 0, 1]]
+    }, 
+    {
+      "op": "Activation", 
+      "name": "relu59_fwd", 
+      "attrs": {"act_type": "relu"}, 
+      "inputs": [[115, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "pool32_fwd", 
+      "attrs": {
+        "global_pool": "False", 
+        "kernel": "(2, 2)", 
+        "layout": "NCHW", 
+        "pad": "(0, 0)", 
+        "pool_type": "max", 
+        "pooling_convention": "valid", 
+        "stride": "(2, 2)"
+      }, 
+      "inputs": [[116, 0, 0]]
+    }, 
+    {
+      "op": "_contrib_MultiBoxPrior", 
+      "name": "tinyssd3_multiboxprior3", 
+      "attrs": {
+        "ratios": "[1, 2, 0.5]", 
+        "sizes": "[0.71, 0.79]"
+      }, 
+      "inputs": [[117, 0, 0]]
+    }, 
+    {
+      "op": "Pooling", 
+      "name": "pool33_fwd", 
+      "attrs": {
+        "global_pool": "True", 
+        "kernel": "(1, 1)", 
+        "layout": "NCHW", 
+        "pad": "(0, 0)", 
+        "pool_type": "max", 
+        "pooling_convention": "full", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[117, 0, 0]]
+    }, 
+    {
+      "op": "_contrib_MultiBoxPrior", 
+      "name": "tinyssd3_multiboxprior4", 
+      "attrs": {
+        "ratios": "[1, 2, 0.5]", 
+        "sizes": "[0.88, 0.961]"
+      }, 
+      "inputs": [[119, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "tinyssd3_concat0", 
+      "attrs": {
+        "dim": "1", 
+        "num_args": "5"
+      }, 
+      "inputs": [[58, 0, 0], [78, 0, 0], [98, 0, 0], [118, 0, 0], [120, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv88_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv88_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv88_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "8", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[57, 0, 0], [122, 0, 0], [123, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "tinyssd3_transpose0", 
+      "attrs": {"axes": "(0, 2, 3, 1)"}, 
+      "inputs": [[124, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "tinyssd3_flatten0", 
+      "inputs": [[125, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv92_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv92_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv92_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "8", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[77, 0, 0], [127, 0, 0], [128, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "tinyssd3_transpose1", 
+      "attrs": {"axes": "(0, 2, 3, 1)"}, 
+      "inputs": [[129, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "tinyssd3_flatten1", 
+      "inputs": [[130, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv96_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv96_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv96_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "8", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[97, 0, 0], [132, 0, 0], [133, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "tinyssd3_transpose2", 
+      "attrs": {"axes": "(0, 2, 3, 1)"}, 
+      "inputs": [[134, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "tinyssd3_flatten2", 
+      "inputs": [[135, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv100_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv100_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv100_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "8", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[117, 0, 0], [137, 0, 0], [138, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "tinyssd3_transpose3", 
+      "attrs": {"axes": "(0, 2, 3, 1)"}, 
+      "inputs": [[139, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "tinyssd3_flatten3", 
+      "inputs": [[140, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv102_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv102_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(8,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv102_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "8", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[119, 0, 0], [142, 0, 0], [143, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "tinyssd3_transpose4", 
+      "attrs": {"axes": "(0, 2, 3, 1)"}, 
+      "inputs": [[144, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "tinyssd3_flatten4", 
+      "inputs": [[145, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "tinyssd3_concat1", 
+      "attrs": {
+        "dim": "1", 
+        "num_args": "5"
+      }, 
+      "inputs": [[126, 0, 0], [131, 0, 0], [136, 0, 0], [141, 0, 0], [146, 0, 0]]
+    }, 
+    {
+      "op": "Reshape", 
+      "name": "tinyssd3_reshape0", 
+      "attrs": {"shape": "(0, -1, 2)"}, 
+      "inputs": [[147, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv89_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv89_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv89_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "16", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[57, 0, 0], [149, 0, 0], [150, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "tinyssd3_transpose5", 
+      "attrs": {"axes": "(0, 2, 3, 1)"}, 
+      "inputs": [[151, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "tinyssd3_flatten5", 
+      "inputs": [[152, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv93_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv93_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv93_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "16", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[77, 0, 0], [154, 0, 0], [155, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "tinyssd3_transpose6", 
+      "attrs": {"axes": "(0, 2, 3, 1)"}, 
+      "inputs": [[156, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "tinyssd3_flatten6", 
+      "inputs": [[157, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv97_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv97_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv97_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "16", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[97, 0, 0], [159, 0, 0], [160, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "tinyssd3_transpose7", 
+      "attrs": {"axes": "(0, 2, 3, 1)"}, 
+      "inputs": [[161, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "tinyssd3_flatten7", 
+      "inputs": [[162, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv101_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv101_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv101_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "16", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[117, 0, 0], [164, 0, 0], [165, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "tinyssd3_transpose8", 
+      "attrs": {"axes": "(0, 2, 3, 1)"}, 
+      "inputs": [[166, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "tinyssd3_flatten8", 
+      "inputs": [[167, 0, 0]]
+    }, 
+    {
+      "op": "null", 
+      "name": "conv103_weight", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16, 0, 3, 3)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "null", 
+      "name": "conv103_bias", 
+      "attrs": {
+        "__dtype__": "0", 
+        "__init__": "zeros", 
+        "__lr_mult__": "1.0", 
+        "__shape__": "(16,)", 
+        "__storage_type__": "0", 
+        "__wd_mult__": "1.0"
+      }, 
+      "inputs": []
+    }, 
+    {
+      "op": "Convolution", 
+      "name": "conv103_fwd", 
+      "attrs": {
+        "dilate": "(1, 1)", 
+        "kernel": "(3, 3)", 
+        "layout": "NCHW", 
+        "no_bias": "False", 
+        "num_filter": "16", 
+        "num_group": "1", 
+        "pad": "(1, 1)", 
+        "stride": "(1, 1)"
+      }, 
+      "inputs": [[119, 0, 0], [169, 0, 0], [170, 0, 0]]
+    }, 
+    {
+      "op": "transpose", 
+      "name": "tinyssd3_transpose9", 
+      "attrs": {"axes": "(0, 2, 3, 1)"}, 
+      "inputs": [[171, 0, 0]]
+    }, 
+    {
+      "op": "Flatten", 
+      "name": "tinyssd3_flatten9", 
+      "inputs": [[172, 0, 0]]
+    }, 
+    {
+      "op": "Concat", 
+      "name": "tinyssd3_concat2", 
+      "attrs": {
+        "dim": "1", 
+        "num_args": "5"
+      }, 
+      "inputs": [[153, 0, 0], [158, 0, 0], [163, 0, 0], [168, 0, 0], [173, 0, 0]]
+    }
+  ], 
+  "arg_nodes": [
+    0, 
+    1, 
+    2, 
+    4, 
+    5, 
+    6, 
+    7, 
+    10, 
+    11, 
+    13, 
+    14, 
+    15, 
+    16, 
+    20, 
+    21, 
+    23, 
+    24, 
+    25, 
+    26, 
+    29, 
+    30, 
+    32, 
+    33, 
+    34, 
+    35, 
+    39, 
+    40, 
+    42, 
+    43, 
+    44, 
+    45, 
+    48, 
+    49, 
+    51, 
+    52, 
+    53, 
+    54, 
+    59, 
+    60, 
+    62, 
+    63, 
+    64, 
+    65, 
+    68, 
+    69, 
+    71, 
+    72, 
+    73, 
+    74, 
+    79, 
+    80, 
+    82, 
+    83, 
+    84, 
+    85, 
+    88, 
+    89, 
+    91, 
+    92, 
+    93, 
+    94, 
+    99, 
+    100, 
+    102, 
+    103, 
+    104, 
+    105, 
+    108, 
+    109, 
+    111, 
+    112, 
+    113, 
+    114, 
+    122, 
+    123, 
+    127, 
+    128, 
+    132, 
+    133, 
+    137, 
+    138, 
+    142, 
+    143, 
+    149, 
+    150, 
+    154, 
+    155, 
+    159, 
+    160, 
+    164, 
+    165, 
+    169, 
+    170
+  ], 
+  "node_row_ptr": [
+    0, 
+    1, 
+    2, 
+    3, 
+    4, 
+    5, 
+    6, 
+    7, 
+    8, 
+    11, 
+    12, 
+    13, 
+    14, 
+    15, 
+    16, 
+    17, 
+    18, 
+    19, 
+    22, 
+    23, 
+    24, 
+    25, 
+    26, 
+    27, 
+    28, 
+    29, 
+    30, 
+    31, 
+    34, 
+    35, 
+    36, 
+    37, 
+    38, 
+    39, 
+    40, 
+    41, 
+    42, 
+    45, 
+    46, 
+    47, 
+    48, 
+    49, 
+    50, 
+    51, 
+    52, 
+    53, 
+    54, 
+    57, 
+    58, 
+    59, 
+    60, 
+    61, 
+    62, 
+    63, 
+    64, 
+    65, 
+    68, 
+    69, 
+    70, 
+    71, 
+    72, 
+    73, 
+    74, 
+    75, 
+    76, 
+    77, 
+    78, 
+    81, 
+    82, 
+    83, 
+    84, 
+    85, 
+    86, 
+    87, 
+    88, 
+    89, 
+    92, 
+    93, 
+    94, 
+    95, 
+    96, 
+    97, 
+    98, 
+    99, 
+    100, 
+    101, 
+    102, 
+    105, 
+    106, 
+    107, 
+    108, 
+    109, 
+    110, 
+    111, 
+    112, 
+    113, 
+    116, 
+    117, 
+    118, 
+    119, 
+    120, 
+    121, 
+    122, 
+    123, 
+    124, 
+    125, 
+    126, 
+    129, 
+    130, 
+    131, 
+    132, 
+    133, 
+    134, 
+    135, 
+    136, 
+    137, 
+    140, 
+    141, 
+    142, 
+    143, 
+    144, 
+    145, 
+    146, 
+    147, 
+    148, 
+    149, 
+    150, 
+    151, 
+    152, 
+    153, 
+    154, 
+    155, 
+    156, 
+    157, 
+    158, 
+    159, 
+    160, 
+    161, 
+    162, 
+    163, 
+    164, 
+    165, 
+    166, 
+    167, 
+    168, 
+    169, 
+    170, 
+    171, 
+    172, 
+    173, 
+    174, 
+    175, 
+    176, 
+    177, 
+    178, 
+    179, 
+    180, 
+    181, 
+    182, 
+    183, 
+    184, 
+    185, 
+    186, 
+    187, 
+    188, 
+    189, 
+    190, 
+    191, 
+    192, 
+    193, 
+    194, 
+    195, 
+    196, 
+    197, 
+    198, 
+    199
+  ], 
+  "heads": [[121, 0, 0], [148, 0, 0], [174, 0, 0]], 
+  "attrs": {"mxnet_version": ["int", 10600]}
+}
